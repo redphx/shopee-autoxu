@@ -8,10 +8,6 @@ function onSuccess(coins) {
     iconUrl: 'img/icon-128.png',
     message: 'Đã nhận thành công ' + coins + ' Xu của hôm nay',
   });
-
-  chrome.alarms.create(ALARM_NAME, {
-    periodInMinutes: PERIOD_IN_MINUTES,
-  });
 }
 
 function redeemCoins() {
@@ -43,3 +39,7 @@ chrome.alarms.onAlarm.addListener(alarm => {
 })
 
 redeemCoins();
+
+chrome.alarms.create(ALARM_NAME, {
+  periodInMinutes: PERIOD_IN_MINUTES,
+});
