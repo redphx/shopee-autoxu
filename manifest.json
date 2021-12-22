@@ -2,7 +2,7 @@
     "name": "AutoXu for Shopee",
     "author": "redphx",
     "description": "Tự động nhận Shopee Xu mỗi ngày",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "manifest_version": 2,
 
     "icons": {

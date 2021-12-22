@@ -14,7 +14,7 @@ function redeemCoins() {
   console.log('redeemCoins', Date());
 
   let xhr = new XMLHttpRequest();
-  xhr.open('POST', 'https://shopee.vn/mkt/coins/api/v1/checkin_v2/', true);
+  xhr.open('POST', 'https://shopee.vn/mkt/coins/api/v2/checkin_new', true);
   xhr.responseType = 'json';
   xhr.onreadystatechange = () => {
     if (xhr.readyState == 4) {
